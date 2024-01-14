@@ -1,1 +1,25 @@
-<p>login works!</p>
+<div class="w-full min-h-screen flex flex-col sm:flex-row">
+    <div id="banner" class="hidden sm:block w-full md:w-6/12 bg-login-landing bg-cover min-h-[300px] sm:min-h-screen"></div>
+    <div id="form-section" class="w-full sm:w-6/12 flex flex-col justify-center items-center p-4">
+        <div id="welcome-text" class="text-orange-500 mb-4">
+            <img src="../../assets/images/BNI_logo.svg" alt="logo B" >
+            <h2 class="text-3xl sm:text-5xl font-semibold">Travelink</h2>
+        </div>
+        <div class="flex flex-col gap-y-6 text-center w-full sm:w-7/12">
+            <form class="text-left font-medium flex flex-col gap-4">
+                <div class="flex flex-col">
+                    <label for="userID" class="mb-2">User ID</label>
+                    <input type="text" id="userID" class="border rounded-md border-gray-40 p-2 focus:outline-none focus:ring focus:border-orange-500 transition-all duration-300" name="userID" placeholder="Masukkan User ID"/>
+                </div>
+                <div class="flex flex-col">
+                    <label for="mpin" class="mb-2">MPIN</label>
+                    <div class="relative">
+                        <input type="password" id="mpin" class="border rounded-md border-gray-400 p-2 w-full focus:outline-none focus:ring focus:border-orange-500 transition-all duration-300" name="mpin" placeholder="MPIN"/>                   
+                    </div>
+                </div>
+                
+            </form>
+            <button (click)="onButtonClick()" class="bg-orange-600 text-white font-semibold p-2 rounded-md">Login</button>
+        </div>
+    </div>
+</div>

@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'login-landing':"url('/assets/images/landing-page.jpg')"
+      },
       fontFamily:{
         'primary':['Poppins']
       }
